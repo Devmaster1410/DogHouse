@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Doghouse - Bringing Together All Meme Communities">
+    <meta name="description" content="DogHouse - Bringing Together All Meme Communities">
     <meta name="author" content="Devmaster1410">
-    <meta name="keywords" content="Doghouse, Dog Crypto, Meme Crypto, Community Token">
-    <title>Doghouse - Give Your Dog a Home</title>
+    <meta name="keywords" content="DogHouse, Dog Crypto, Meme Crypto, Community Token">
+    <title>DogHouse - Give Your Dog a Home</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Anton&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
@@ -18,6 +18,7 @@
             padding: 0;
             background: linear-gradient(to bottom, #f8b500, #fcf4e6);
             color: #212529;
+            scroll-behavior: smooth; /* Smooth scrolling for anchor links */
         }
 
         .navbar {
@@ -45,7 +46,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('https://github.com/Devmaster1410/Doghouse/blob/main/Dlogo.png?raw=true') no-repeat center center / 80%; /* Adjusted size */
+            background: url('https://github.com/Devmaster1410/Doghouse/blob/main/Dlogo.png?raw=true') no-repeat center center / 80%;
             opacity: 0.08;
             z-index: -1;
         }
@@ -98,13 +99,13 @@
             text-transform: uppercase;
         }
 
-        .pumpfun-section, .roadmap-section, #about {
+        .section {
             opacity: 0;
             transform: translateY(50px);
             transition: opacity 0.8s ease-out, transform 0.8s ease-out;
         }
 
-        .visible {
+        .section.visible {
             opacity: 1;
             transform: translateY(0);
         }
@@ -140,7 +141,7 @@
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="https://github.com/Devmaster1410/Doghouse/blob/main/Dlogo.png?raw=true" alt="Doghouse Logo">
-                Doghouse
+                DogHouse
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -167,16 +168,16 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-5">
+    <section id="about" class="py-5 section">
         <div class="container">
-            <h2 class="section-title">About Doghouse</h2>
-            <p>Doghouse is here to unite all dog-themed communities 🐾 and welcome everyone else into our Doghouse. It’s not just a token—it’s a movement to bring people together.</p>
-            <p>This is where the party’s at 🐾. Doghouse is creating a lively, inclusive space for communities to connect, ideas to grow, and trust to thrive. Whether you’re a proud member of a dog-themed community or just discovering the meme space, Doghouse is where you belong.</p>
+            <h2 class="section-title">About DogHouse</h2>
+            <p>DogHouse is here to unite all dog-themed communities 🐾 and welcome everyone else into our DogHouse. It’s not just a token—it’s a movement to bring people together.</p>
+            <p>This is where the party’s at 🐾. DogHouse is creating a lively, inclusive space for communities to connect, ideas to grow, and trust to thrive. Whether you’re a proud member of a dog-themed community or just discovering the meme space, DogHouse is where you belong.</p>
         </div>
     </section>
 
     <!-- Pump Fun Section -->
-    <section id="pumpfun" class="pumpfun-section">
+    <section id="pumpfun" class="pumpfun-section section">
         <div class="container">
             <h2 class="section-title">Why Pump Fun?</h2>
             <p>We chose Pump Fun because we believe in its potential to be more than just a platform for struggling projects. While it has often been associated with ventures that fail to thrive, we’re here to rewrite that narrative. By taking this route, we aim to lead by example, proving that a well-executed, community-driven launch can bring success and credibility.</p>
@@ -185,7 +186,7 @@
     </section>
 
     <!-- Roadmap Section -->
-    <section id="roadmap" class="py-5 roadmap-section">
+    <section id="roadmap" class="py-5 roadmap-section section">
         <div class="container">
             <h2 class="section-title">Roadmap</h2>
             <ul>
@@ -202,4 +203,6 @@
                 <li>🐾 Collaborations with Dog-Themed Communities to unite and strengthen the ecosystem.</li>
                 <li>🐾 Sponsorships and Partnerships to support real-world initiatives and grow credibility.</li>
                 <li>🐾 Mobile App Launch for a seamless and user-friendly experience.</li>
-                <li>🐾 Further CEX Listings and ecosystem enhancements based on milestones and growth
+                <li>🐾 Further CEX Listings and ecosystem enhancements based on milestones and growth.</li>
+            </ul>
+            <p class="text-center mt-4" style="font-size
