@@ -53,7 +53,6 @@
 
         .hero .welcome {
             font-size: 2.5rem;
-            font-family: 'Montserrat', sans-serif;
             font-weight: 300;
             margin-bottom: 10px;
         }
@@ -140,7 +139,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="https://github.com/Devmaster1410/Doghouse/blob/main/Dlogo.png?raw=true" alt="Doghouse Logo">
+                <img src="https://github.com/Devmaster1410/DogHouse/blob/main/Dlogo.png?raw=true" alt="DogHouse Logo">
                 DogHouse
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -172,7 +171,6 @@
         <div class="container">
             <h2 class="section-title">About DogHouse</h2>
             <p>DogHouse is here to unite all dog-themed communities 🐾 and welcome everyone else into our DogHouse. It’s not just a token—it’s a movement to bring people together.</p>
-            <p>This is where the party’s at 🐾. DogHouse is creating a lively, inclusive space for communities to connect, ideas to grow, and trust to thrive. Whether you’re a proud member of a dog-themed community or just discovering the meme space, DogHouse is where you belong.</p>
         </div>
     </section>
 
@@ -180,8 +178,7 @@
     <section id="pumpfun" class="pumpfun-section section">
         <div class="container">
             <h2 class="section-title">Why Pump Fun?</h2>
-            <p>We chose Pump Fun because we believe in its potential to be more than just a platform for struggling projects. While it has often been associated with ventures that fail to thrive, we’re here to rewrite that narrative. By taking this route, we aim to lead by example, proving that a well-executed, community-driven launch can bring success and credibility.</p>
-            <p>Our mission goes beyond just launching a token; it’s about restoring faith in Pump Fun and demonstrating that quality, trust, and innovation can prevail. Together, we are determined to make Pump Fun great again and set a new standard for what’s possible.</p>
+            <p>We chose Pump Fun because we believe in its potential to be more than just a platform for struggling projects. While it has often been associated with ventures that fail to thrive, we’re here to rewrite that narrative.</p>
         </div>
     </section>
 
@@ -190,32 +187,34 @@
         <div class="container">
             <h2 class="section-title">Roadmap</h2>
             <ul>
-                <li>🐾 Token Launch on Pump Fun to establish credibility and community trust.</li>
-                <li>🐾 Website Launch to serve as the official hub for all information and updates.</li>
-                <li>🐾 Social Media Setup: Twitter and Telegram for community engagement and announcements.</li>
-                <li>🐾 Gradual Community Growth through organic interaction and strategic marketing.</li>
-                <li>🐾 DEX Listing: Radium/Jupiter to enhance token accessibility and trading opportunities.</li>
-                <li>🐾 CoinMarketCap (CMC) and CoinGecko (CG) Listings for wider recognition and trust-building.</li>
-                <li>🐾 Targeted Marketing Campaigns to expand awareness and attract new participants.</li>
-                <li>🐾 Governance Approach: While initially not a governance token, we remain open to evolving based on community consensus.</li>
-                <li>🐾 CEX Listing within 60 days of DEX launch to provide more trading options and liquidity.</li>
-                <li>🐾 Staking Dashboard with innovative features to reward long-term holders and encourage token use.</li>
-                <li>🐾 Collaborations with Dog-Themed Communities to unite and strengthen the ecosystem.</li>
-                <li>🐾 Sponsorships and Partnerships to support real-world initiatives and grow credibility.</li>
-                <li>🐾 Mobile App Launch for a seamless and user-friendly experience.</li>
-                <li>🐾 Further CEX Listings and ecosystem enhancements based on milestones and growth.</li>
+                <li>🐾 Token Launch on Pump Fun</li>
+                <li>🐾 Website Launch</li>
+                <li>🐾 Social Media Setup</li>
+                <li>🐾 Gradual Community Growth</li>
+                <li>🐾 DEX Listing</li>
+                <li>🐾 CEX Listing</li>
             </ul>
-            <p class="text-center mt-4" style="font-size: 1.2rem; color: #e67e22;">Stay tuned for the next roadmap release with exciting new targets!</p>
-    </div>
-</section>
+        </div>
+    </section>
 
-<!-- Footer -->
-<footer>
-    <p>&copy; 2024 Doghouse. All Rights Reserved.</p>
-    <p><a href="https://github.com/Devmaster1410/Doghouse">GitHub Repository</a></p>
-</footer>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 DogHouse. All Rights Reserved.</p>
+        <p><a href="https://github.com/Devmaster1410/DogHouse">GitHub Repository</a></p>
+    </footer>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Scroll-based animation
+        document.addEventListener('scroll', () => {
+            document.querySelectorAll('.section').forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                    section.classList.add('visible');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
