@@ -39,7 +39,7 @@
             text-align: center;
             padding: 100px 20px;
             color: white;
-            background: linear-gradient(to bottom right, #ff7e5f, #feb47b); /* Adjusted to match logo colors */
+            background: linear-gradient(to bottom right, #ff7e5f, #feb47b);
             overflow: hidden;
         }
 
@@ -50,8 +50,8 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('https://raw.githubusercontent.com/Devmaster1410/DogHouse/main/Dlogo.png') no-repeat center center / contain;
-            opacity: 0.25; /* Increased opacity for better visibility */
+            background: url('https://raw.githubusercontent.com/Devmaster1410/Doghouse/main/Dlogo.png') no-repeat center center / contain;
+            opacity: 0.25;
             z-index: -1;
         }
 
@@ -97,31 +97,47 @@
             background: rgba(255, 255, 255, 0.1);
         }
 
+        /* Updated Section Styles */
+        #about,
+        #pumpfun,
+        #roadmap {
+            color: white;
+        }
+
         #about {
             background: linear-gradient(to bottom, #3498db, #2ecc71);
-            color: white;
         }
 
         #pumpfun {
             background: linear-gradient(to bottom, #8e44ad, #3498db);
-            color: white;
         }
 
         #roadmap {
             background: linear-gradient(to bottom, #27ae60, #f39c12);
-            color: white;
         }
 
         .section-title {
             text-align: center;
             margin-bottom: 40px;
-            font-size: 2rem;
+            font-size: 2.5rem; /* Increased font size */
             color: white;
             text-transform: uppercase;
             padding: 10px;
             border: 3px solid #fff;
             display: inline-block;
             background: rgba(0, 0, 0, 0.2);
+            font-weight: bold;
+            text-shadow: 2px 2px #000; /* Added text shadow */
+        }
+
+        /* Updated Paragraph Styles */
+        .section p,
+        .section ul li {
+            font-size: 1.5rem; /* Increased font size */
+            font-weight: bold; /* Made text bold */
+            line-height: 1.5;
+            text-shadow: 1px 1px #000; /* Added text shadow */
+            margin-bottom: 20px;
         }
 
         ul {
@@ -132,16 +148,15 @@
         }
 
         ul li {
-            margin-bottom: 10px;
-            font-size: 1.2rem;
             position: relative;
         }
 
         ul li::before {
             content: "🐾";
             position: absolute;
-            left: -30px;
+            left: -40px;
             color: #f39c12;
+            font-size: 1.5rem;
         }
 
         footer {
@@ -172,6 +187,15 @@
             .hero p {
                 font-size: 1.2rem;
             }
+
+            .section p,
+            .section ul li {
+                font-size: 1.2rem; /* Adjusted for mobile */
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
         }
     </style>
 </head>
@@ -180,7 +204,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="https://raw.githubusercontent.com/Devmaster1410/DogHouse/main/Dlogo.png" alt="DogHouse Logo">
+                <img src="https://raw.githubusercontent.com/Devmaster1410/Doghouse/main/Dlogo.png" alt="DogHouse Logo">
                 DogHouse
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -246,7 +270,7 @@
     <!-- Footer -->
     <footer>
         <p>&copy; 2023 DogHouse. All rights reserved.</p>
-        <p>Follow us on <a href="https://twitter.com/YourTwitterHandle" target="_blank">Twitter</a> and join our <a href="https://t.me/YourTelegramGroup" target="_blank">Telegram</a>.</p>
+        <p>Follow us on <a href="https://x.com/DogHouse_DHS?t=ZcJ5RV3s2zg-Rj68MFlKvQ&s=09" target="_blank">Twitter</a> and join our <a href="https://t.me/YourTelegramGroup" target="_blank">Telegram</a>.</p>
     </footer>
 
     <!-- Bootstrap JS -->
